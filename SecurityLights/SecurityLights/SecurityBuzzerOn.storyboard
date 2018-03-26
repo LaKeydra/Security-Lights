@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oVh-qK-Hnp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Security Buzzer On View Controller-->
+        <scene sceneID="dRW-0e-Xj0">
+            <objects>
+                <viewController id="oVh-qK-Hnp" customClass="SecurityBuzzerOnViewController" customModule="SecurityLights" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mit-2e-Ce9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIM-Vd-CVA">
+                                <rect key="frame" x="66.5" y="52" width="242" height="143.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="120"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSI-NA-8z7">
+                                <rect key="frame" x="0.0" y="195.5" width="375" height="423.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the button to stop." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhg-c5-xzB">
+                                        <rect key="frame" x="98.5" y="67" width="179" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="AcI-El-xPw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dx-rz-IMH">
+                                        <rect key="frame" x="67.5" y="113" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="6Jx-YY-uCl"/>
+                                            <constraint firstAttribute="height" constant="240" id="gEj-Qc-7tF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="img2"/>
+                                        <connections>
+                                            <action selector="sosBuzzerAction:" destination="oVh-qK-Hnp" eventType="touchUpInside" id="wCU-zx-rIZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8dx-rz-IMH" firstAttribute="top" secondItem="Dhg-c5-xzB" secondAttribute="bottom" constant="30" id="7lo-EK-1mO"/>
+                                    <constraint firstItem="8dx-rz-IMH" firstAttribute="centerY" secondItem="WSI-NA-8z7" secondAttribute="centerY" multiplier="1.1" id="9Dj-iv-C1z"/>
+                                    <constraint firstItem="8dx-rz-IMH" firstAttribute="centerX" secondItem="WSI-NA-8z7" secondAttribute="centerX" id="s72-N5-bZH"/>
+                                    <constraint firstItem="Dhg-c5-xzB" firstAttribute="centerX" secondItem="WSI-NA-8z7" secondAttribute="centerX" id="yRc-kn-UQ3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXs-hN-g30">
+                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.070000000000000007" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="8TE-h7-iwD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TXs-hN-g30" firstAttribute="leading" secondItem="ZIb-bM-WA5" secondAttribute="leading" id="8K1-aG-heG"/>
+                            <constraint firstItem="ZIb-bM-WA5" firstAttribute="trailing" secondItem="WSI-NA-8z7" secondAttribute="trailing" id="Oyd-dF-Hdb"/>
+                            <constraint firstItem="WSI-NA-8z7" firstAttribute="leading" secondItem="ZIb-bM-WA5" secondAttribute="leading" id="QBK-gV-vJq"/>
+                            <constraint firstItem="ZIb-bM-WA5" firstAttribute="bottom" secondItem="TXs-hN-g30" secondAttribute="bottom" id="aoU-Yu-OY0"/>
+                            <constraint firstItem="vIM-Vd-CVA" firstAttribute="centerX" secondItem="mit-2e-Ce9" secondAttribute="centerX" id="bBf-8z-tQq"/>
+                            <constraint firstItem="TXs-hN-g30" firstAttribute="top" secondItem="WSI-NA-8z7" secondAttribute="bottom" id="hci-9x-3Zd"/>
+                            <constraint firstItem="WSI-NA-8z7" firstAttribute="top" secondItem="vIM-Vd-CVA" secondAttribute="bottom" id="l0r-Yw-u6F"/>
+                            <constraint firstItem="vIM-Vd-CVA" firstAttribute="top" secondItem="ZIb-bM-WA5" secondAttribute="top" constant="32" id="leM-pt-Oi7"/>
+                            <constraint firstItem="ZIb-bM-WA5" firstAttribute="trailing" secondItem="TXs-hN-g30" secondAttribute="trailing" id="okj-0H-nAJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZIb-bM-WA5"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroudView" destination="mit-2e-Ce9" id="aoK-C8-QMJ"/>
+                        <outlet property="contentLabel" destination="Dhg-c5-xzB" id="Jk0-9Y-rEb"/>
+                        <outlet property="sosBuzzerBtn" destination="8dx-rz-IMH" id="ZMt-gq-lvI"/>
+                        <outlet property="statusLabel" destination="TXs-hN-g30" id="e0W-vn-yba"/>
+                        <outlet property="titleLabel" destination="vIM-Vd-CVA" id="xsI-tt-q00"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEy-H5-LE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703" y="-195"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img2" width="250" height="250"/>
+    </resources>
+</document>
